@@ -1,0 +1,71 @@
+.home-container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+}
+
+.products {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 20px;
+  background-color: #eaeded;
+}
+
+.product-image {
+  object-fit: contain;
+  width: 100%;
+  overflow: hidden;
+  height: 250px;
+  cursor: pointer;
+}
+
+.each-product {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.product-name {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1196ab;
+  cursor: pointer;
+}
+.product-name:hover {
+  color: #b12704;
+}
+
+.add-to-cart {
+  width: max-content;
+  margin-top: 10px;
+  height: 25px;
+  padding: 10px;
+  background-color: #f7ca00;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #0f1111;
+}
+.add-to-cart:hover {
+  background-color: #f3a847;
+}
